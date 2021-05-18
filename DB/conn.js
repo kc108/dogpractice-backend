@@ -11,6 +11,7 @@ const mongoose = require("mongoose");
 const config = { useUnifiedTopology: true, useNewUrlParser: true };
 const DB = mongoose.connection;
 
+// DB EVENTS
 mongoose.connect(MONGODBURI, config);
 
 DB.on("open", () => console.log("You are connected to Mongo"))
