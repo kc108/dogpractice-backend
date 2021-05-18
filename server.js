@@ -5,7 +5,8 @@ require("dotenv").config();
 const { PORT = 3000, NODE_ENV = "development" } = process.env;
 
 //MONGO CONNECTION
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+const mongoose = require("./DB/conn")
 
 //CORS
 const cors = require("cors");
